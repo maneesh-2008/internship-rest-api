@@ -1,0 +1,49 @@
+{
+  "info": {
+    "name": "Internship API examples",
+    "description": "Example HTTP requests for the Internship REST API"
+  },
+  "requests": [
+    {
+      "name": "List internships",
+      "method": "GET",
+      "url": "http://localhost:3000/api/internships?page=1&limit=10"
+    },
+    {
+      "name": "Get internship",
+      "method": "GET",
+      "url": "http://localhost:3000/api/internships/1"
+    },
+    {
+      "name": "Create internship",
+      "method": "POST",
+      "url": "http://localhost:3000/api/internships",
+      "body": {
+        "title": "Backend Developer Intern",
+        "company": "Example Labs",
+        "domain": "Technology",
+        "location_type": "Remote",
+        "duration": "3 months",
+        "stipend": "₹9,000 / month",
+        "description": "Build and test API endpoints with the engineering team.",
+        "skills": [
+          "Node.js",
+          "Express"
+        ]
+      }
+    },
+    {
+      "name": "Update internship",
+      "method": "PATCH",
+      "url": "http://localhost:3000/api/internships/1",
+      "body": {
+        "stipend": "₹12,000 / month"
+      }
+    },
+    {
+      "name": "Delete internship",
+      "method": "DELETE",
+      "url": "http://localhost:3000/api/internships/1"
+    }
+  ]
+}
